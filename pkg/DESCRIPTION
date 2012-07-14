@@ -1,0 +1,31 @@
+Package: somTools
+Type: Package
+Title: somTools - Tools to visualize and analyze Kohonen's Self-Organizing Map
+Version: 0.1-1
+Date: 2012-07-14
+Author: David H. Brown
+Maintainer: David H. Brown <dave@davidhbrown.us>
+Description: 
+  The somTools package provides familiar and novel visualizations and
+  analyses of Kohonen's self-organizing map. Supports maps created by 
+  the 'som' and 'kohonen' packages.
+  Developed at the University of Rhode Island, USA.
+  .
+  Includes a novel visualization of the self-organizing map where training
+  or new data are mapped to the nodes of the map, adjusting their position
+  to take into account similarity to neighboring nodes. The plotted area of
+  individual nodes may be adjusted according to a cartogram function, perhaps
+  to increase the size of areas with high data density.
+  .
+  There exist in R multiple implementations of Kohonen's self-
+  organizing maps. To facilitate further development of tools for working
+  with SOMs, this package provides a common interface. When a somCart is
+  created from some other type of SOM, the original SOM's properties will
+  be converted (if necessary) and copied to the slots of the somCart.
+  .
+  This package does not itself create SOMs. Supported SOM implementations
+  include those in the packages som and kohonen.
+License: GPL-3
+LazyLoad: yes
+Suggests: som, kohonen, sp, Rcartogram, RUnit
+Depends: methods
